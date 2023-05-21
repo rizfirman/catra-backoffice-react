@@ -18,6 +18,7 @@ function LoginPage() {
   const handleShowPassword = () => {
     setIsShowPassword(!isShowPassword);
   };
+  console.log(userName, password)
   return (
     <div className="login flex min-h-screen w-full flex-col grow">
       <div className="flex h-32 w-screen"></div>
