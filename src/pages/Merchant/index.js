@@ -54,14 +54,14 @@ const Merchant = () => {
                 </div>
               </div>
 
-              <div class="inline-block relative w-[102px] mr-2">
-                <select class="block appearance-none w-full   bg-[#D1D5DB] border border-[#D1D5DB] hover:border-gray-500 px-4 py-2 pr-8 rounded-[6px] shadow leading-tight focus:outline-none focus:shadow-outline">
+              <div className="inline-block relative w-[102px] mr-2">
+                <select className="block appearance-none w-full   bg-[#D1D5DB] border border-[#D1D5DB] hover:border-gray-500 px-4 py-2 pr-8 rounded-[6px] shadow leading-tight focus:outline-none focus:shadow-outline">
                   <option>Status</option>
                   <option>Option 2</option>
                   <option>Option 3</option>
                 </select>
-                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                  <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
                 </div>
@@ -98,7 +98,7 @@ const Merchant = () => {
               </thead>
               <tbody>
                 {merchantResponse.map((item, index) => (
-                  <tr class="bg-white border-b ">
+                  <tr className="bg-white border-b ">
                     <td class="px-6 py-4">
                       <p className="text-[14px] font-sans font-[500]">{item.name}</p>
                       <p className="text-[#6B7280] text-[14px] font-sans font-[500]">{item.email}</p>
@@ -116,8 +116,8 @@ const Merchant = () => {
                         {item.status}
                       </div>
                     </td>
-                    <td class="px-6 py-4">{item.subscription}</td>
-                    <td className='text-[#4F46E5]'>Edit</td>
+                    <td className="px-6 py-4">{item.subscription}</td>
+                    <td className="text-[#4F46E5]">Edit</td>
                   </tr>
                 ))}
               </tbody>
@@ -133,60 +133,35 @@ const Merchant = () => {
             </div>
             <div>
               <nav className="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
-                <a
-                  href="#"
-                  className="relative inline-flex items-center rounded-l-md px-2 py-2 text-[#9CA3AF]  focus:z-20 focus:outline-offset-0"
-                >
+                <p className="relative inline-flex items-center rounded-l-md px-2 py-2 text-[#9CA3AF]  focus:z-20 focus:outline-offset-0">
                   <span className="sr-only">Previous</span>
                   <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" />
-                </a>
-                <a
-                  href="#"
-                  aria-current="page"
-                  className="relative z-10 inline-flex items-center px-4 py-2 text-[#9CA3AF] text-sm font-semibold  focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
+                </p>
+                <p className="relative z-10 inline-flex items-center px-4 py-2 text-[#9CA3AF] text-sm font-semibold  focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                   1
-                </a>
-                <a
-                  href="#"
-                  className="relative inline-flex items-center px-4 py-2 text-[#9CA3AF] text-sm font-semibold focus:z-20 focus:outline-offset-0"
-                >
+                </p>
+                <p className="relative inline-flex items-center px-4 py-2 text-[#9CA3AF] text-sm font-semibold focus:z-20 focus:outline-offset-0">
                   2
-                </a>
-                <a
-                  href="#"
-                  className="relative hidden items-center px-4 py-2 text-sm text-[#9CA3AF] font-semibold  focus:z-20 focus:outline-offset-0 md:inline-flex"
-                >
+                </p>
+                <p className="relative hidden items-center px-4 py-2 text-sm text-[#9CA3AF] font-semibold  focus:z-20 focus:outline-offset-0 md:inline-flex">
                   3
-                </a>
+                </p>
                 <span className="relative inline-flex items-center px-4 py-2 text-sm  text-[#9CA3AF] font-semibold focus:outline-offset-0">
                   ...
                 </span>
-                <a
-                  href="#"
-                  className="relative hidden items-center px-4 py-2 text-sm font-semibold text-[#9CA3AF]  focus:z-20 focus:outline-offset-0 md:inline-flex"
-                >
+                <p className="relative hidden items-center px-4 py-2 text-sm font-semibold text-[#9CA3AF]  focus:z-20 focus:outline-offset-0 md:inline-flex">
                   8
-                </a>
-                <a
-                  href="#"
-                  className="relative inline-flex items-center px-4 py-2 text-sm text-[#9CA3AF] font-semibold  focus:z-20 focus:outline-offset-0"
-                >
+                </p>
+                <p className="relative inline-flex items-center px-4 py-2 text-sm text-[#9CA3AF] font-semibold  focus:z-20 focus:outline-offset-0">
                   9
-                </a>
-                <a
-                  href="#"
-                  className="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-[#9CA3AF]  focus:z-20 focus:outline-offset-0"
-                >
+                </p>
+                <p className="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-[#9CA3AF]  focus:z-20 focus:outline-offset-0">
                   10
-                </a>
-                <a
-                  href="#"
-                  className="relative inline-flex items-center rounded-r-md px-2 py-2 text-[#9CA3AF]  focus:z-20 focus:outline-offset-0"
-                >
+                </p>
+                <p className="relative inline-flex items-center rounded-r-md px-2 py-2 text-[#9CA3AF]  focus:z-20 focus:outline-offset-0">
                   <span className="sr-only">Next</span>
                   <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
-                </a>
+                </p>
               </nav>
             </div>
           </div>
