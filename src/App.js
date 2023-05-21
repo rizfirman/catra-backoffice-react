@@ -1,5 +1,4 @@
 import './assets/scss/App.scss';
-import { useState } from 'react';
 import LoginPage from './pages/LoginPage';
 import Dashboard from './pages/Dashboard';
 import Merchant from './pages/Merchant';

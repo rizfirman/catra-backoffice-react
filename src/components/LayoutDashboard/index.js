@@ -41,25 +41,25 @@ const Layout = ({ children, active }) => {
             <img src={MerchantIcon} alt="Dashboard Logo" className="mr-2" />
             <p className="text-[16px] font-[500] text-[#6B7280] font-sans">Merchant</p>
           </NavLink>
-          <Link to="#" className="flex p-5 hover:bg-gray-200">
+          <Link to="/user" className="flex p-5 hover:bg-gray-200">
             <img src={UserIcon} alt="Dashboard Logo" className="mr-2" />
             <p className="text-[16px] font-[500] text-[#6B7280] font-sans">Users</p>
           </Link>
-          <Link to="#" className="flex p-5 hover:bg-gray-200">
+          <Link to="/data-subscription" className="flex p-5 hover:bg-gray-200">
             <img src={DataSubsIcon} alt="Dashboard Logo" className="mr-2" />
             <p className="text-[16px] font-[500] text-[#6B7280] font-sans">Data Subscription</p>
           </Link>
-          <Link to="#" className="flex p-5 hover:bg-gray-200">
+          <Link to="/data-online-shop" className="flex p-5 hover:bg-gray-200">
             <img src={OnlineShopIcon} alt="Dashboard Logo" className="mr-2" />
             <p className="text-[16px] font-[500] text-[#6B7280] font-sans">Data Online Shop</p>
           </Link>
-          <Link to="#" className="flex p-5 hover:bg-gray-200">
+          <Link to="/pembayaran-non-tunai" className="flex p-5 hover:bg-gray-200">
             <img src={NonTunaiIcon} alt="Dashboard Logo" className="mr-2" />
             <p className="text-[16px] font-[500] text-[#6B7280] font-sans">Pembayaran Non Tunai</p>
           </Link>
           <div className="p-5"></div>
 
-          <Link to="#" className="flex p-5 hover:bg-gray-200">
+          <Link to="/config" className="flex p-5 hover:bg-gray-200">
             <img src={ConfigIcon} alt="Dashboard Logo" className="mr-2" />
             <p className="text-[16px] font-[500] text-[#6B7280] font-sans">Config</p>
           </Link>
