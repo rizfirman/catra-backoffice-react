@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Layout from '../../components/LayoutDashboard';
 import clipboardCheck from '../../assets/icons/clipboard-check.svg';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
