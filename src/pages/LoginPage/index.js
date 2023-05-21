@@ -18,6 +18,7 @@ function LoginPage() {
   const handleShowPassword = () => {
     setIsShowPassword(!isShowPassword);
   };
+  console.log(userName, password)
   return (
     <div className="login flex min-h-screen w-full flex-col grow">
       <div className="flex h-32 w-screen"></div>
@@ -48,7 +49,7 @@ function LoginPage() {
                 className="absolute inset-y-0 right-0 flex items-center px-4 text-gray-600"
                 onClick={handleShowPassword}
               >
-                <img src={eyeSymbol} width={20} height={20} alt="Picture of the author" />
+                <img src={eyeSymbol} width={20} height={20} alt="eye" />
               </button>
             </div>
             <button className="bg-[#1E40AF] rounded-[4px] mt-2 text-[12px] font-normal text-white  font-sans w-[54px] h-[30px]">

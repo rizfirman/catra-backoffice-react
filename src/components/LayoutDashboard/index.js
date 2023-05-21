@@ -11,7 +11,7 @@ import ConfigIcon from '../../assets/icons/config-icon.svg';
 import sideBarOpen from '../../assets/icons/sidebar-open.svg';
 import sideBarClose from '../../assets/icons/sidebar-close.svg';
 
-const Layout = ({ children, active }) => {
+const Layout = ({ children}) => {
   const [isShowSideBar, setIsShowSideBar] = useState(false);
   const onClickSideBar = () => {
     setIsShowSideBar(!isShowSideBar);
@@ -21,7 +21,7 @@ const Layout = ({ children, active }) => {
       <div className="mx-auto  grid grid-cols-12">
         <header className="col-span-12 p-5 shadow-lg flex items-center">
           <div>
-            <img src={CatraLogo} alt="Catra Logo" className='mr-3'/>
+            <img src={CatraLogo} alt="Catra" className='mr-3'/>
           </div>
           <div>
             {isShowSideBar ? (
@@ -34,33 +34,33 @@ const Layout = ({ children, active }) => {
 
         <aside className={isShowSideBar ? "col-span-2 border border-r-2" : "hidden"}>
           <NavLink to="/dashboard" className="flex p-5 hover:bg-gray-200">
-            <img src={DashboardLogo} alt="Dashboard Logo" className="mr-2" />
+            <img src={DashboardLogo} alt="Dashboard" className="mr-2" />
             <p className="text-[16px] font-[500] text-[#6B7280] font-sans">Dashboard</p>
           </NavLink>
           <NavLink to="/merchant" className="flex p-5 hover:bg-gray-200">
-            <img src={MerchantIcon} alt="Dashboard Logo" className="mr-2" />
+            <img src={MerchantIcon} alt="merchant" className="mr-2" />
             <p className="text-[16px] font-[500] text-[#6B7280] font-sans">Merchant</p>
           </NavLink>
-          <Link to="#" className="flex p-5 hover:bg-gray-200">
-            <img src={UserIcon} alt="Dashboard Logo" className="mr-2" />
+          <Link to="/user" className="flex p-5 hover:bg-gray-200">
+            <img src={UserIcon} alt="users" className="mr-2" />
             <p className="text-[16px] font-[500] text-[#6B7280] font-sans">Users</p>
           </Link>
-          <Link to="#" className="flex p-5 hover:bg-gray-200">
-            <img src={DataSubsIcon} alt="Dashboard Logo" className="mr-2" />
+          <Link to="/data-subscription" className="flex p-5 hover:bg-gray-200">
+            <img src={DataSubsIcon} alt="data subs" className="mr-2" />
             <p className="text-[16px] font-[500] text-[#6B7280] font-sans">Data Subscription</p>
           </Link>
-          <Link to="#" className="flex p-5 hover:bg-gray-200">
-            <img src={OnlineShopIcon} alt="Dashboard Logo" className="mr-2" />
+          <Link to="/data-online-shop" className="flex p-5 hover:bg-gray-200">
+            <img src={OnlineShopIcon} alt="data online shop" className="mr-2" />
             <p className="text-[16px] font-[500] text-[#6B7280] font-sans">Data Online Shop</p>
           </Link>
-          <Link to="#" className="flex p-5 hover:bg-gray-200">
-            <img src={NonTunaiIcon} alt="Dashboard Logo" className="mr-2" />
+          <Link to="/pembayaran-non-tunai" className="flex p-5 hover:bg-gray-200">
+            <img src={NonTunaiIcon} alt="pembayaran non tunai" className="mr-2" />
             <p className="text-[16px] font-[500] text-[#6B7280] font-sans">Pembayaran Non Tunai</p>
           </Link>
           <div className="p-5"></div>
 
-          <Link to="#" className="flex p-5 hover:bg-gray-200">
-            <img src={ConfigIcon} alt="Dashboard Logo" className="mr-2" />
+          <Link to="/config" className="flex p-5 hover:bg-gray-200">
+            <img src={ConfigIcon} alt="config" className="mr-2" />
             <p className="text-[16px] font-[500] text-[#6B7280] font-sans">Config</p>
           </Link>
         </aside>

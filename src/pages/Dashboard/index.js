@@ -9,7 +9,6 @@ const Dashboard = () => {
         <div className="flex justify-center">
           <div>
             <h1 className="">Dashboard</h1>
-           
           </div>
         </div>
       </Layout>
