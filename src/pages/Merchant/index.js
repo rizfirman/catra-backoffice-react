@@ -4,7 +4,7 @@ import clipboardCheck from '../../assets/icons/clipboard-check.svg';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
 
 const Merchant = () => {
-  const [merchantResponse, setMerchantResponse] = useState([
+  const merchantResponse =[
     {
       id: 1,
       name: 'PT. Catra Teknologi Indonesia',
@@ -14,7 +14,7 @@ const Merchant = () => {
       status: 'Active',
       subscription: 'Free',
     },
-  ]);
+  ]
   return (
     <div>
       <Layout>
@@ -25,7 +25,7 @@ const Merchant = () => {
             <div className="w-[276px] h-[107px] mb-3 p-5">
               <div className="flex">
                 <div className="bg-[#059669] w-[40px] h-[40px] flex items-center justify-center rounded-[8px] mr-2">
-                  <img src={clipboardCheck} />
+                  <img src={clipboardCheck} alt="clipboard check" />
                 </div>
                 <div className="leading-[20px]">
                   <p className="text-[#9CA3AF] text-[14px] font-sans font-[500]">Total merchant</p>
