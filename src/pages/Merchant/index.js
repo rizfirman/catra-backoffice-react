@@ -1,9 +1,11 @@
 import React from 'react';
 import Layout from '../../components/LayoutDashboard';
 import clipboardCheck from '../../assets/icons/clipboard-check.svg';
+import { useNavigate } from "react-router-dom";
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
 
 const Merchant = () => {
+  const navigate = useNavigate();
   const merchantResponse =[
     {
       id: 1,
@@ -15,6 +17,11 @@ const Merchant = () => {
       subscription: 'Free',
     },
   ]
+
+  const goToTheAddMerchantPage = () => {
+    navigate('/merchant/add')
+  }
+
   return (
     <div>
       <Layout>
@@ -73,7 +80,7 @@ const Merchant = () => {
           </div>
           <div className="col-span-4"></div>
 
-          <button className="bg-[#1E40AF]  text-[12px] font-sans font-[500] rounded-[4px] text-white p-2 mt-5">
+          <button onClick={goToTheAddMerchantPage} className="bg-[#1E40AF]  text-[12px] font-sans font-[500] rounded-[4px] text-white p-2 mt-5">
             Tambah merchant
           </button>
         </div>
